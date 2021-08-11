@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #48c5ce;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.title {
+    font-size: 26px;
+}
+
+section {
+    padding: 20px;
+    background-image: url('../image/Cópia\ de\ people.jpg');
+    /*Faz com que o tamanho da imagem seja o tamanho exato pra cobrir a div  */
+    background-size: cover;
+
+    /*Por estar flutuando, a div fica como se não tivesse conteúdo.*/
+    overflow: hidden; /*faz com que a img preencha tudo o que ela tiver que preencher de fato*/
+}
+
+.formContainer {
+    
+    background-color: #ffffffbb;
+    max-width: 230px;
+    float: right;
+    padding: 20px;
+    color: black;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box; /*Para não ter a diferença de alinhamento*/
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+}
+
+select {
+    /*Ele faz com que o select não tenha a aparencia padrao dos navegadores*/
+    -moz-appearance: none; 
+    appearance: none;
+    -webkit-appearance: none;
+    
+    background-image: url('../image/Cópia\ de\ arrow.jpg');
+    background-repeat: no-repeat;
+
+    /*background-position:      X            Y*/
+    background-position: calc(100% - 10px) center;
+}
+
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.picture {
+    width: 160px;
+}
+
+.description {
+    color:white;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+
+.description h3 {
+    font-size: 24px;
+}
